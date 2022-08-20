@@ -18,7 +18,7 @@ y, z
 z, x
 z, y
 z, z`
-````
+```
 
 In the game code below
 
@@ -32,7 +32,7 @@ Finally take an input for a user choice and compare the two against the rules
 
 It all turns in to something like as follows, without any tedious if,then,else logic - but hardly readable in bash:
 
-```bash`
+```bash
 #!/bin/bash
 
 # deps: bash, shuf, grep, cut, fontawesome
