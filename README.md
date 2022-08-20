@@ -28,7 +28,7 @@ First declare the rules to the game (rules), but get them in to the right order 
 
 Then use the nested for loops to create all the possible options (combinations)
 
-I forgot how this code works on the combinations part exactly, because bash sucks, but basically after that just generate a random computer choice and also take an input for a user choice. Compare the computers and human against the rule grid to output the correct outcome.
+I forgot how this code works on the combinations part exactly, because bash sucks, (probably should have used an associative array, but "it works" and this is bash, so if it works, then it is acceptable.) But basically after that just generate a random computer choice and also take an input for a user choice. Compare the computers and human against the rule grid to output the correct outcome.
 
 It all turns in to something like as follows, without any tedious if,then,else logic:
 
