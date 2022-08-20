@@ -20,6 +20,8 @@ z, y
 z, z`
 ```
 
+By the way, never use nested for loops in production, it's too slow.
+
 In the game code below
 
 First declare the rules to the game (rules)
