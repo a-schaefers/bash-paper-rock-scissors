@@ -7,7 +7,7 @@ e.g.
 ```bash
 list=(x y z)
 
-for x in ${list[@]}; do for y in ${list[@]}; do echo "$x, $y"; done; done
+for x in "${list[@]};" do for y in "${list[@]}"; do echo "$x, $y"; done; done
 
 x, x
 x, y
