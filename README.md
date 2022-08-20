@@ -1,3 +1,35 @@
+# Using nested for loops creates a grid
+
+e.g.
+
+```bash
+list=(x y z)
+
+for x in ${list[@]}; do for y in ${list[@]}; do echo "$x, $y"; done; done
+
+x, x
+x, y
+x, z
+y, x
+y, y
+y, z
+z, x
+z, y
+z, z`
+````
+
+In the game code below
+
+First declare the rules to the game (rules)
+
+Then use the nested for loops to create all the possible options (combinations)
+
+Then Generate a random computer choice
+
+Finally take an input for a user choice and compare the two against the rules
+
+It all turns in to something like as follows, without any tedious if,then,else logic - but hardly readable in bash:
+
 ```bash`
 #!/bin/bash
 
@@ -45,3 +77,11 @@ main () {
 
 main
 ````
+
+It turns out after doing all of this, someone on the internet told me the game could be summarized in only one line of code,
+
+```bash
+echo -e "rock\npaper\nscissors" | shuf -n 1
+```
+
+PR accepted if someone wants to add a netcat http server and use Bash's ability to tap in to `/dev/tcp/host/port` for multiplayer support.
