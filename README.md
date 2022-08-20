@@ -1,4 +1,6 @@
-# Using nested for loops creates a grid
+# Pure Bash Rock Paper Scissors
+
+Using nested for loops creates a grid
 
 e.g.
 
