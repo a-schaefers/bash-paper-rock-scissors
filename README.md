@@ -24,15 +24,13 @@ By the way, never use nested for loops in production, it's too slow.
 
 In the game code below
 
-First declare the rules to the game (rules)
+First declare the rules to the game (rules), but get them in to the right order of the grid output
 
 Then use the nested for loops to create all the possible options (combinations)
 
-Then Generate a random computer choice
+I forgot how this code works on the combinations part exactly, because bash sucks, but basically after that just generate a random computer choice and also take an input for a user choice. Compare the computers and human against the rule grid to output the correct outcome.
 
-Finally take an input for a user choice and compare the two against the rules
-
-It all turns in to something like as follows, without any tedious if,then,else logic - but hardly readable in bash:
+It all turns in to something like as follows, without any tedious if,then,else logic:
 
 ```bash
 #!/bin/bash
