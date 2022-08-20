@@ -82,7 +82,7 @@ main () {
 main
 ````
 
-It turns out after doing all of this, someone on the internet told me the game could be summarized in only one line of code,
+As it turns out, someone on the internet told me the game could be summarized in only one line of code,
 
 ```bash
 echo -e "rock\npaper\nscissors" | shuf -n 1
