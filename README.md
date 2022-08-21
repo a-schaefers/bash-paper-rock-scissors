@@ -5,19 +5,19 @@ Using nested for loops creates a grid
 e.g.
 
 ```bash
-list=(x y z)
+list=(rock paper scissors)
 
 for x in "${list[@]}"; do for y in "${list[@]}"; do echo "$x, $y"; done; done
 
-x, x
-x, y
-x, z
-y, x
-y, y
-y, z
-z, x
-z, y
-z, z`
+rock, rock
+rock, paper
+rock, scissors
+paper, rock
+paper, paper
+paper, scissors
+scissors, rock
+scissors, paper
+scissors, scissors
 ```
 
 By the way, never use nested for loops in production, it's too slow.
